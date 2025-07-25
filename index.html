@@ -1,0 +1,1133 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internet Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<style>
+    /* rakhi Css */
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            overflow-x: hidden; /* Left to Right Scrolling Disable */
+            margin: 0;
+            padding: 0;
+            width: 100%;
+                
+    background: url(c:\Users\Nitesh\Downloads\Pink-watercolor-background.webp) no-repeat center center fixed;
+    background-size: cover;
+        }
+        
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #fffdfd;
+            line-height: 1.6;
+        }      
+
+        /* Search Bar Styling */
+        nav form {
+            display: flex;
+            justify-content: right;  /* Serach Bar Location */
+            margin-left: 250px;   /* search bar me kitna gap hon acahaye */
+        }
+
+        nav input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 1em;
+            width: 250px;
+            
+        }
+
+
+        nav button {
+            padding: 10px 15px;
+            background-color: #17e4a3;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            color: rgba(255, 0, 0, 0.438);
+            margin-left:30px;
+        }
+        nav ul li {
+  display: inline-block;
+  font: size 20px;/*Ya apne according */
+}
+
+        nav button:hover {
+            background-color: #ff5722;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
+            padding:  0;
+            
+        }
+   
+
+        /* Main Content */
+        .container {
+            width: 80%;
+            margin: 80px auto;
+            display: flex;
+            
+            gap: 40px;
+
+
+        }
+
+        /* Main Blog Content */
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgb(255, 0, 0);
+        }
+
+        .main-content h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgb(248, 1, 1);
+        }
+
+        .sidebar h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ff5722;
+        }
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+
+    
+    background-color: rgba(246, 235, 235, 0.9);
+    padding: 10px;  /* Removed padding to reduce height */
+    height: auto;  /* Automatically adjusts height based on content */
+    width: 100%;
+    max-width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Container Adjustments */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;  /* Reset top margin to remove extra space above logo */
+    padding-top: 0; /* Reset padding above logo */
+}
+
+/* Logo Image Adjustments */
+.logo-container img {
+    margin-top: 0;  /* Ensure no extra margin on the top of the logo */
+    padding-top: 0; /* Ensure no padding on the top of the logo */
+}
+
+
+
+/* Remove padding or margin from list items */
+nav ul li {
+    display: inline-block;
+    padding: 0px;
+    margin: 0;  /* Reset margin */
+}
+
+/* Links inside the list items */
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+}
+/* 🔹 Navbar Styling */
+.navbar-container {
+    background: linear-gradient(45deg, #41ffd3b0, #007bffa9);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* 🔹 Logo Animation */
+.logo-container img {
+    width: 17%;
+    height: auto;
+    margin-right: 40px;
+    transition: transform 0.5s ease-in-out;
+    animation: bounce 2s infinite;
+}
+
+.logo-container img:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* 🔹 Heading and Text */
+h1, p {
+    animation: slideIn 1.5s ease-in-out;
+    color: white;
+}
+
+/* 🔹 Greeting Animation */
+#greeting {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: yellow;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* 🔹 Date and Day Animation */
+#current-day, #current-date {
+    font-weight: bold;
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* 🔹 Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes glow {
+    0% { color: yellow; text-shadow: 0 0 5px yellow; }
+    100% { color: white; text-shadow: 0 0 10px white; }
+}
+
+
+/* Hero Section or Content Below */
+#hero {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding:  0;
+    margin-top: 0;  /* Reset margin above hero section */
+    height: 100vh; /* hero section should take up full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* center the content vertically */
+}
+#hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 0px;
+}
+#hero p {
+      font-size: 1.5em;
+      margin-bottom: 0px;
+}
+
+
+       
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .menu-icon {
+                display: block;
+                margin-left: auto;
+                font-size: 2.5em;
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main-content,
+            .sidebar {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+       /* 4 horizental box */
+        .box-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            width: 220px;
+            background: linear-gradient(135deg, #ffffff, #e3f2fd);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #2196F3;
+        }
+        .box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 2px solid #21d4f3;
+        }
+        .box h3 {
+            margin: 15px 0;
+            color: #00ffdd;
+            font-size: 20px;
+        }
+        .box p {
+            padding: 0 15px 20px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* Container for 3 boxes */
+        .box-container {
+            display: flex;
+            justify-content: space-around; /* Even spacing */
+            gap: 20px; /* Space between boxes */
+            padding: 20px;
+            flex-wrap: wrap; /* Makes it responsive */
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .box-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+/* new box container desgin */
+
+.flex-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* all box stlying*/
+.flex-box {
+    width: 200px;
+    height: auto;
+    background: linear-gradient(135deg, #75e8ff, #ff7eb3);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.flex-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 213, 0, 0.525);
+}
+
+/* box content  */
+.flex-box h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.flex-box p {
+    color: #fdfdfd;
+    font-size: 14px;
+}
+
+/* box walii img  */
+.flex-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+/* Read More button */
+.Read-Now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #ff3d00;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.Download-Now {
+    display: inline-block;
+    margin-top: 10px; 
+    padding: 8px 15px;
+    background-color: white;
+    color: #ff3d00;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+} 
+
+.Download-Now:hover {
+    background-color: #ff3d00;
+    color: white;
+}
+/* button hover */
+.Read-Now:hover {
+    background-color: #ff3d00;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .flex-box-container {
+        flex-direction: column;
+    }
+
+    .flex-box {
+        width: 90%;
+    }
+}
+
+
+    /* yha se footer css start */
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        position: auto;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        padding: 10px 20px;
+    }
+    
+    .footer-content {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 70%;
+    }
+    
+    .footer-content a {
+        color: #00c3ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .footer-content a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-logo img {
+        height: auto;
+        max-width: 150px;
+    }
+    
+    /* 📌 Mobile Responsive */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer-content {
+            max-width: 100%;
+            text-align: center;
+            font-size: 12px; /* Small font for mobile */
+        }
+        .footer-logo {
+            margin-top: 10px;
+            justify-content: center;
+        }
+        .footer-logo img {
+            height: 40px; /* Smaller logo for mobile */
+        }
+    }
+    
+    
+    
+</style>
+    <!-- Navigation Bar -->
+    <nav>
+        
+        
+        <div class="navbar-container">
+             <!-- Logo Below the Navigation Bar -->
+                                                     <!-- Logo and Text with Date, Day, and Greeting -->
+<div class="logo-container" style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+    <!-- Logo and Address -->
+    <div style="display: flex; align-items: center;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXvGe-Vjs-UMY8bU7Hpt2ghgAU13i21aG0KGdhH20M8kZtNwFi4rM8WjE2ff7HT3kTkO7kmKp73YwY61QUsQH5EPCdZEJ-lduiDxM6170rDQ5C2t1h47JXP6jXDbLH0PhiqqV1NH7ajRbcadF51qtUiXQDAIzDMveeu7kKbSQCFvV-C4IO2eHGJyc5tkQ5/s526/ri.pngss" alt="Logo" style="width: 17%; height: auto;; margin-right: 40px;">
+        <div>
+            <h1 style="font-size: 2.5em; color: #000000;">Rakhi Internet</h1>
+            <p style="font-size: 1.5em; color: #666;">Bahichara Dj Sound </p>
+          
+            <p><a href="https://maps.app.goo.gl/LZQMWDgYGDWxm2gE8" 
+                target="_blank" 
+                style="color: #007bff; text-decoration: none;">
+             📍 Old Bus Stand, Narnaund [HR] 125039
+             </a></p>
+             <p style="font-size: 1.1em; color: #666;">
+                <a href="https://maps.app.goo.gl/6BVfMz8XyQBQi6Zg8" 
+                   target="_blank" 
+                   style="color: #007bff; text-decoration: none;">
+                📍 Bhiwani Road Bypass, Jind [HR] 126102
+                </a>
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Greeting, Day, and Date Display -->
+    <div id="datetime" style="font-family: 'Arial', sans-serif; font-size: 1.1em; text-align: left; color: #e45c5c; border-left: 2px solid #0c0c0c;  padding-left: 20px; height: 100px; display: flex; flex-direction: column; justify-content: center;">
+        <span id="greeting" style="font-weight: bold; font-size: 1.5em; color: #ff5722;"></span>
+        <span id="current-day" style="font-weight: bold; font-size: 1.2em;"></span>
+        <span id="current-date" style="font-size: 1.1em; color: #666;"></span>
+    </nav>
+    </div>
+</div>
+
+<script>
+    function updateDateTime() {
+        var today = new Date();
+
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        var day = days[today.getDay()];
+        var date = today.getDate();
+        var month = months[today.getMonth()];
+        var year = today.getFullYear();
+        var hours = today.getHours();
+
+        // Determine greeting based on the time of day
+        var greeting;
+        if (hours < 12) {
+            greeting = "Good Morning";
+        } else if (hours < 18) {
+            greeting = "Good Afternoon";
+        } else {
+            greeting = "Good Evening";
+        }
+
+        // Update greeting, day, and date in the HTML
+        document.getElementById('greeting').textContent = greeting;
+        document.getElementById('current-day').textContent = day;
+        document.getElementById('current-date').textContent = date + ' ' + month + ' ' + year;
+    }
+
+    // Initial call to display greeting, day, and date immediately
+    updateDateTime();
+  </script>
+
+
+    <div>
+       
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: Arial, sans-serif;
+                }
+        
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #f8f9fa;
+                    padding: 10px 20px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 20px;
+                }
+        
+                ul li {
+                    display: inline;
+                }
+        
+                ul li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 18px;
+                    padding: 8px 12px;
+                    transition: 0.3s;
+                }
+        
+                ul li a:hover {
+                    color: #007bff;
+                }
+        
+                .search-box {
+                    position: relative;
+                }
+        
+                .search-box input {
+                    padding: 8px 12px;
+                    width: 200px;
+                    border: 1px solid #ccc;
+                    border-radius: 20px;
+                    outline: none;
+                    transition: width 0.3s ease-in-out;
+                }
+        
+                .search-box input:focus {
+                    width: 250px;
+                    border-color: #007bff;
+                }
+        
+                .search-box button {
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+        
+                .search-box button img {
+                    width: 16px;
+                    height: 16px;
+                }
+        
+                /* Search Results Dropdown */
+                .search-results {
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    background: white;
+                    border: 1px solid #ccc;
+                    width: 100%;
+                    border-radius: 5px;
+                    display: none;
+                    max-height: 150px;
+                    overflow-y: auto;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                .search-results div {
+                    padding: 8px;
+                    cursor: pointer;
+                }
+        
+                .search-results div:hover {
+                    background: #f0f0f0;
+                }
+                .home-btn {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .home-btn:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            transform: scale(1.1);
+        }
+            </style>
+        </head>
+        <body>
+        
+            <nav>
+                <ul>
+                    <li><a href="#" class="home-btn">🏠 Home</a></li>
+                    <li><a href="c:\Users\Nitesh\Desktop\Main Program\nav bar\registration.html">Registration</a></li>
+                    <li><a href="c:\Users\Nitesh\Desktop\Main Program\nav bar\Contact.html">Contact</a></li>
+                    <li><a href="c:\Users\Nitesh\Desktop\Main Program\nav bar\About.html">About</a></li>
+                </ul>
+              
+            </nav>
+        
+     </div> 
+     
+    
+ </div>
+ <!-- All types notes in pdf form  -->
+
+ <h2 style="text-align: center; color: #333;">Available Resources</h2>
+ <div class="box-container">
+     <div class="box">
+        <a href="c:\Users\Nitesh\Desktop\Main Program\available resource\CSC Untitled-1.htmls"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMW6BBVoKjV4EARjxmtPqeBmtZcaTAAD41X7sqAuc7DBeO9MG0JKbRiVvuq1V6XPB3NmmyPE_EYhJZUjRgnSBh54ZJRar2apHHwJsNzb8ZOG-wTdrcewftSbCPl17P2SnOeMU97JC5ErD_oWWxCfW9_TTCHaa4F2kolSuMhuS2G7OND46jlpIEFVUptV4Y/s500/csc.png" alt=" ">
+        </a>
+        
+     </div>
+
+     <div class="box">
+        <a href="c:\Users\Nitesh\Desktop\Main Program\available resource\Distance Education Untitled-1.html "> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmyX1laHaIUEaDyx67QVQ6TAal7f1jOa3OYt-hR7hUy5YOjBvCMvKvkQcDDH5mEB7l-yVoonm6aLwQoRJHNYrOs48E_5L5EKENwSa-7Aokp5VBfTJYA63KktwfBwgvFkXdSXH4dUzh2Z-qvERxdztYeL3f1vzTsGFgOyMIVSqvst7yOh_pOe1v7-kLi4zu/s360/distance%20education.png" alt=" ">
+        </a>
+     </div>
+
+     <div class="box">
+        <a href="c:\Users\Nitesh\Desktop\Main Program\available resource\Bhaichata Dj Untitled-1.html "> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivUl84bsONTa-StRkbQ8_NUKJFi-LSxyGom7dVl721-sTB32JvWrWjIbljbz4YEYbbwFAuKOkCDc2_6Lxtox2-Af-thjH91dEQ_Ay8ElCYMna-T5S3POppD6uCJitUgibWn3omSR0T0c_1S-m9GI9dZESdV1MRHusfNqr505SD9B7qdDv-qtyeJJh1nhoN/s225/DJ%20logo.png" alt=" ">
+        </a>
+     </div>
+     
+     <div class="box">
+         <a href="c:\Users\Nitesh\Desktop\Main Program\available resource\DTDC Untitled-1.html"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvs604mLFouu7hbTKxo6o8XJLkXitFmrDrob_jlCqI1gIoimjXGQTg9PFbsVWhEZ022HW_GXttPAJMVfYACBCYHpOsYrBpWoGEuCysxtACBlYNEEl7eSTihD7zfpXePeMChRuvQt-9LpqpmoUmFX9KhMIe8e_KWGkGwC97veCHXad6__Q-JvLPGpyQlen1/s225/dtdc.png" alt=" ">
+         </a>
+     </div> 
+     
+     
+ </div>
+                <!-- image
+                          Slideshow 
+                                     code -->
+ <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; }
+
+    .slideshow-container {
+        position: relative;
+        max-width: 1000px;
+        height: 450px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .slides {
+        display: none;
+        width: 100%;
+        animation: fade 1s;
+    }
+
+    @keyframes fade {
+        from { opacity: 0.4; } 
+        to { opacity: 1; }
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .dots-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 5px;
+        background-color: #bbb;
+        border-radius: 0%;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .active { background-color: #717171; }
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <img class="slides" src="c:\Users\Nitesh\Downloads\rakhi internet.jpg " alt="Slide 1" style="height: 450px; width: 1000px;">
+    <img class="slides" src="c:\Users\Nitesh\Downloads\dtdc.jpg " alt="Slide 2" style="height: 450px;">
+    
+    <img class="slides" src="c:\Users\Nitesh\Downloads\5.jpg " alt="Slide 3" style="height: 450px;">
+    
+
+    
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+
+
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.querySelectorAll(".slides");
+        let dots = document.querySelectorAll(".dot");
+        
+        slides.forEach(slide => slide.style.display = "none");
+        dots.forEach(dot => dot.classList.remove("active"));
+        
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active");
+        
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+
+    function changeSlide(n) {
+        slideIndex += n - 1;
+        showSlides();
+    }
+
+    function currentSlide(n) {
+        slideIndex = n - 1;
+        showSlides();
+    }
+</script>
+
+                                  <!--JOb 
+                                           LInK 
+                                                 PArt 
+                                                        Start -->                 
+
+ <!-- Blog Content -->
+    <div class="container">
+        <!-- Main Blog Content -->
+        <style>
+            .job-container {
+                width: 800px; /* पहले वाले box की width */
+                max-width: 90%;
+                background: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid #007bff;
+                overflow-y: auto;  /* Scroll Enable */
+                max-height: 350px; /* पहले वाला height */
+            }
+        
+            .job-container::-webkit-scrollbar {
+                width: 5px;
+            }
+        
+            .job-container::-webkit-scrollbar-thumb {
+                background: #007bff;
+                border-radius: 10px;
+            }
+        
+            .job-link {
+                background: #f9f9f9;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 5px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        
+            .job-link a {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                color: #007bff;
+                display: block;
+                padding: 5px;
+            }
+        </style>
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+            }
+        
+            .job-container {
+                flex: 2; /* Left box को बड़ा किया */
+                max-width: 100%;
+                background: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid #007bff;
+                overflow-y: auto;
+                max-height: 400px; /* थोड़ा और ऊंचा किया */
+            }
+        
+            .sidebar {
+                flex: 1; /* Right box same रहेगा */
+                max-width: 40%;
+                background: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid #ff5733;
+            }
+        
+            .job-link {
+                background: #f9f9f9;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 5px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        
+            .job-link a {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                color: #007bff;
+                display: block;
+                padding: 5px;
+            }
+        </style>
+        
+        
+        <div class="job-container">
+            <h2 style="text-align: center;">✨ Latest Job Links ✨</h2>
+        
+            <div class="job-link"><a href="https://hkrnl.itiharyana.gov.in/" target="_blank">🔗 Harayana Kosal Rojgar Nigam (HKRN)</a></div>
+            <div class="job-link"><a href="https://ssc.gov.in/" target="_blank">🔗 Staff Selection Commission (SSC)</a></div>
+            <div class="job-link"><a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank">🔗 Railway Recruitment Board (RRB)</a></div>
+            <div class="job-link"><a href="https://indiapostgdsonline.gov.in/" target="_blank">🔗 India Post (GDS)</a></div>
+            <div class="job-link"><a href=" https://recruitment.itbpolice.nic.in/rect/index.php" target="_blank">🔗 Indo Tibetan Border Police Force (ITBP)</a></div>
+            <div class="job-link"><a href="https://rectt.bsf.gov.in/" target="_blank">🔗 Board Security Force (BSF)</a></div>
+            <div class="job-link"><a href="https://cdn.digialm.com//EForms/configuredHtml/1258/82990//Index.html" target="_blank">🔗 Central Reserve Police Force (CRPF)</a></div>
+            <div class="job-link"><a href="https://cisfrectt.cisf.gov.in/index.php" target="_blank">🔗 Central Industrial Security Force (CISF)</a></div>
+            <div class="job-link"><a href="https://admissions.itiharyana.gov.in/" target="_blank">🔗 Haryana ITI Portal</a></div>
+            <div class="job-link"><a href="https://techadmissionshry.gov.in/default" target="_blank">🔗 Haryana Polytechnic Portal</a></div>
+        
+            <!-- Extra Links (Scrollable) -->
+            <div class="job-link"><a href="https://admissions.highereduhry.ac.in/Home" target="_blank">🔗 Haryana College UG</a></div>
+            <div class="job-link"><a href="http://admissions.highereduhry.ac.in/" target="_blank">🔗 Haryana College PG</a></div>
+            <div class="job-link"><a href="https://indianairforce.nic.in/career-in-iaf/" target="_blank">🔗 Air Force</a></div>
+            <div class="job-link"><a href="https://www.joinindiannavy.gov.in/#" target="_blank">🔗 Navy Army</a></div>
+        
+        </div>
+        
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h4 style="text-align:center"> ✨ SCHOLARSHIP LINK ✨ </h4>
+            <marquee direction="right" behavior="scroll" scrollamount="2 scrolldelay=15" style="color: black; font-size: 20px;">
+                
+                <div class="job-link">
+                    <a href="#" class="last-date-btn" target="_blank">
+                      📅 Last Date: 15 April 2025
+                    </a>
+                  </div>
+                  <div class="job-link">
+                    <a href="#" target="_blank">
+                      🔗POST MATRIC SCHOLARSHIP
+                    </a>
+                  </div>
+                  <div class="job-link">
+                    <a href="https://saralharyana.gov.in/" target="_blank">
+                      🔗Bhimrao Ambedkar SCHOLARSHIP
+                    </a>
+                  </div>
+                  
+                  <div class="job-link">
+                    <a href="https://harchhatravratti.highereduhry.ac.in/" target="_blank">
+                      🔗HAR CHHATRAVRATTI SCHOLARSHIP
+                    </a>
+                  </div>
+                  
+              
+                  
+                  <div class="job-link">
+                    <a herf="#" target="_blank">🔗No More </a>
+                  </div>
+            </marquee>
+           
+        </div>
+    </div>
+                                                  
+    </div>
+                                                             <!-- All 
+                                                                          free 
+                                                                                    Resource   -->
+             
+                
+   <h1 style="text-align: center; color: #222323;">Free Resources</h1>
+   <div class="flex-box-container">
+    <div class="flex-box">
+        <p><h3>9th to 12th Class notes </h3></p>
+        <a href="c:\Users\Nitesh\Desktop\Main Program\free resource\math.html" class="Read-Now">Read Now</a>
+    </div>
+    <div class="flex-box">
+        <p><h3>Ignou Solved Assignment</h3></p>
+        <a href="c:\Users\Nitesh\Desktop\Main Program\free resource\Ignou Assigment.html" class="Download-Now">Download Now</a>
+    </div>
+    <div class="flex-box">
+        
+        <p><h3>Haryana Statsic GK</h3></p>
+        <a href=" c:\Users\Nitesh\Desktop\Main Program\free resource\haryana ststic gk.html" class="Read-Now">Read Now </a>
+    </div>
+    <div class="flex-box">
+        
+        <p><h3>Reasoning & Short Tricks</h3></p>
+        <a href="c:\Users\Nitesh\Desktop\Main Program\free resource\Reasiong.html" class="Read-Now">Read Now</a>
+    </div>
+   <!--  <div class="flex-box">
+        <p><h3>Mathematics & Short Tricks</h3></p>
+        <a href="c:\Users\Nitesh\Desktop\Main Program\free resource\math.html" class="Read-Now">Read Now</a>
+    </div>
+   <div class="flex-box">
+        <p><h3>Specific Subjects</h3></p>
+        <a href="c:\Users\Nitesh\Desktop\Main Program\free resource\specific subject.html " class="Read-Now">Read Now </a>
+    </div>
+    <div class="flex-box">
+        
+        <p><h3>Reasoning & Short Tricks</h3></p>
+        <a href="c:\Users\Nitesh\Desktop\Main Program\free resource\Reasiong.html" class="Read-Now">Read Now</a>
+    </div>
+-->
+</div>
+
+
+    
+        
+</head>
+<body>
+    <!-- yha ae footer html work start -->
+    <footer>
+        <div class="footer-container">
+            <!-- Content section on the left -->
+            <div class="footer-content">
+            <p> Website content managed and owend by Rakhi Internet,All Rights Reserved </p>
+              <p> Website designed by Nitesh Verma & hosted by  CSC.
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+        </div>
+            
+            <!-- Logo section on the right -->
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNVpg8VnfE_9iTJAKJvDdJ6yAZAN8wdSxl411FKykCFki260bkhxKAjvLN3j0rJkg6nenUdN3kXRjW2UKMWYK23NfaZCeEFhtTGGigi7q59dmeF-3ZMNNpeoy_Svpt6FRdQuJ-j2MPth0jIiyTe8X4GWFsyVK4asIVPY6pJ0ZYyq3a1FFa2ZSMXwGB0gzN/s1600/csclogo.png" alt="RakhiInternetLogo" class="footer-logo-image">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
